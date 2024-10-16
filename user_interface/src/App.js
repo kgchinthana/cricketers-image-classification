@@ -1,18 +1,14 @@
 import React from 'react';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import './App.css';
 import MenuAppBar from './components/app-bar';
+import Dropzone from './components/image-drag-and-drop-box';
 
 function App() {
   return (
-    <div className="App">
-      <MenuAppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            My App
-          </Typography>
-        </Toolbar>
+    <div className='App'>
+      <MenuAppBar position='static'>
+        {/* Ensure the Dropzone is correctly placed within the AppBar */}
+        <Dropzone />
       </MenuAppBar>
     </div>
   );
