@@ -25,8 +25,6 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-
-
   return (
     <AppBar position='static' sx={{ backgroundColor: '#545454' }}>
       <Container maxWidth='xl'>
