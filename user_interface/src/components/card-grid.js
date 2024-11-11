@@ -25,6 +25,7 @@ export default function CardGrid() {
     <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center" sx={{ overflowX: 'auto' }}>
       {cardData.map((card, index) => (
         <Grid item key={index}>
+          
           <ActionAreaCard image={card.image} title={card.title} description={card.description} />
         </Grid>
       ))}
