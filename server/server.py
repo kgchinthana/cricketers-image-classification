@@ -5,7 +5,6 @@ import util
 app = Flask(__name__)
 CORS(app)  # This will allow all origins
 
-
 @app.route('/classify_image', methods=['GET', 'POST'])
 def classify_image():
     # Access 'image_data' from form data
