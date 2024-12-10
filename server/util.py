@@ -9,6 +9,7 @@ __class_name_to_number = {}
 __class_number_to_name = {}
 __model = None
 
+
 def classify_image(image_base64_data, file_path=None):
 
     imgs = get_cropped_image_if_2_eyes(file_path, image_base64_data)
