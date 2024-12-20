@@ -4,6 +4,7 @@ import cv2
 
 def w2d(img, mode='haar', level=1):
     imArray = img
+    
     #Datatype conversions
     #convert to grayscale
     imArray = cv2.cvtColor( imArray,cv2.COLOR_RGB2GRAY )
